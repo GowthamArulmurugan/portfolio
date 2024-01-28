@@ -1,10 +1,3 @@
-:root {
-  --primary: rgb(29, 221, 189);
-  --bgDark: rgb(12, 12, 12);
-  --white: rgb(250, 250, 250);
-  --secondary: rgb(0, 59, 50);
-  --bgLight: rgb(190, 181, 181);
-}
 
 html{
   scroll-behavior:smooth;
@@ -18,18 +11,18 @@ html{
   text-decoration: none;
 }
 header {
-  background-color: var(--bgDark);
+  background-color: rgb(12, 12, 12);
   clip-path: rectangle(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
 }
 header nav .left a {
-  color: var(--white);
+  color: rgb(250, 250, 250);
   text-decoration: none;
   margin-right: 2rem;
   text-transform: uppercase;
   transition: all 0.2s ease;
 }
 header nav .left a:hover {
-  color: var(--primary);
+  color: rgb(29, 221, 189);
 }
 header nav {
   padding: 2rem 0;
@@ -53,12 +46,12 @@ body {
   margin: 70px;
 }
 .hero .right {
-  color: var(--white);
+  color: rgb(250, 250, 250);
   margin-top: -7rem;
 }
 .hero .right h6 {
   font-size: 1.6rem;
-  color: var(--primary);
+  color: rgb(29, 221, 189);
   margin-bottom: 0.5rem;
 }
 .hero .right h1 {
@@ -68,14 +61,14 @@ body {
   margin-bottom: 2rem;
 }
 .hero .right h1 span {
-  color: var(--primary);
+  color: rgb(29, 221, 189);
 }
 .hero .right p {
   line-height: 1.9;
   margin-bottom: 2rem;
 }
 .hero .right p span {
-  color: var(--primary);
+  color: rgb(29, 221, 189);
 }
 
 section {
@@ -87,7 +80,7 @@ section.about h1 {
   font-weight: 600;
 }
 section.about h1 span {
-  color: var(--primary);
+  color: rgb(29, 221, 189);
 }
 section.about h3 {
   font-size: 1rem;
@@ -96,13 +89,14 @@ section.about h3 {
 }
 section.about p {
   font-family: "Lato", sans-serif;
-  color: var(--secondary);
+  color: rgb(0, 59, 50);
   line-height: 1.9rem;
   margin-bottom: 2rem;
 }
 section.about .socials {
   display: flex;
 }
+
 section.about .socials a {
   display: flex;
   align-items: center;
@@ -112,7 +106,7 @@ section.about .socials a {
   border-radius: 50%;
 }
 section.about .socials a:hover {
-  background: var(--primary);
+  background: rgb(29, 221, 189);
 }
 
 section.services {
@@ -123,10 +117,10 @@ section.services {
   text-align: center;
   margin-bottom: 1rem;
   line-height: 0.5rem;
-  color: var(--primary);
+  color: rgb(29, 221, 189);
 }
 .services-head + p {
-  color: var(--white);
+  color: rgb(250, 250, 250);
   font-family: "Lato", sans-serif;
   margin-bottom: 1rem;
   text-align: center;
@@ -143,7 +137,7 @@ section.services .card-grid {
   column-gap: 2rem;
 }
 section.services .card-grid .card {
-  background: var(--white);
+  background: rgb(250, 250, 250);
   padding: 3rem 2rem;
   position: relative;
   text-align: center;
@@ -163,17 +157,17 @@ section.services .card-grid .card h2 {
 }
 section.services .card-grid .card p {
   font-family: "Lato", sans-serif;
-  color: var(--seconday);
+  color: rgb(190, 181, 181);
   line-height: 1.6;
 }
 section.services .card-grid .card:hover {
-  background: var(--primary);
+  background: rgb(29, 221, 189);
 }
 section.services .card-grid .card:hover h2 {
-  color: var(--white);
+  color: rgb(250, 250, 250);
 }
 section.services .card-grid .card:hover p {
-  color: var(--white);
+  color: rgb(250, 250, 250);
 }
 
 .flex {
@@ -202,27 +196,28 @@ section.services .card-grid .card:hover p {
   transition: all 0.2s ease;
 }
 .btn-primary {
-  background-color: var(--primary);
-  color: var(--secondary);
+  background-color: rgb(29, 221, 189);
+  color: rgb(0, 59, 50);
   margin-top: -15rem;
 }
 .btn-primary:hover {
   background: transparent;
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: rgb(29, 221, 189);
+  color: rgb(29, 221, 189);
 }
 .flex-1 {
   flex: 1;
 }
 .btn-secondary {
   background: transparent;
-  color: var(--primary);
-  border-color: var(--primary);
+  color: rgb(29, 221, 189);
+  border-color: rgb(29, 221, 189);
 }
 .btn-secondary:hover {
-  background: var(--primary);
-  color: var(--secondary);
+  background: rgb(29, 221, 189);
+  color: rgb(0, 59, 50);
 }
+
 
 table {
   width: 100%;
@@ -234,4 +229,4 @@ th, td {
   text-align: left;
   border: 1px solid;
 }
-tr:hover {background-color: var(--primary);}
+tr:hover {background-color: rgb(29, 221, 189);}
