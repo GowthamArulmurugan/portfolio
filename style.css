@@ -36,38 +36,34 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
-.hero {
+.home {
   padding-top: 2rem;
   padding-bottom: 3rem;
 }
-.hero .left img {
-  width: 800px;
-  height: 500px;
-  margin: 70px;
-}
-.hero .right {
+
+.home .right {
   color: rgb(250, 250, 250);
   margin-top: -7rem;
 }
-.hero .right h6 {
+.home .right h6 {
   font-size: 1.6rem;
   color: rgb(29, 221, 189);
   margin-bottom: 0.5rem;
 }
-.hero .right h1 {
+.home .right h1 {
   font-size: 4rem;
   font-weight: 100;
   line-height: 1.2;
   margin-bottom: 2rem;
 }
-.hero .right h1 span {
+.home .right h1 span {
   color: rgb(29, 221, 189);
 }
-.hero .right p {
+.home .right p {
   line-height: 1.9;
   margin-bottom: 2rem;
 }
-.hero .right p span {
+.home .right p span {
   color: rgb(29, 221, 189);
 }
 
@@ -127,10 +123,7 @@ section.services {
   margin-bottom: 6rem;
   font-weight: 400;
 }
-.card img {
-  width: 50px;
-  background: white;
-}
+
 section.services .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,13 +136,7 @@ section.services .card-grid .card {
   text-align: center;
   transition: all 0.2s ease;
 }
-section.services .card-grid .card img {
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  color: var();
-}
+
 section.services .card-grid .card h2 {
   font-weight: 600;
   font-size: 1.2rem;
@@ -169,6 +156,30 @@ section.services .card-grid .card:hover h2 {
 section.services .card-grid .card:hover p {
   color: rgb(250, 250, 250);
 }
+button{
+  width: 150px;
+}
+.img1 {
+  animation: floatAnimation 3s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.sk {
+  transition: transform 0.3s ease-in-out;
+}
+
+.sk:hover {
+  transform: translateY(-10px); /* Adjust the value as needed for the desired effect */
+}
+
 
 .flex {
   display: flex;
