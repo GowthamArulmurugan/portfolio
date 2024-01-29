@@ -157,6 +157,228 @@ section.services .card-grid .card:hover p {
   color: rgb(250, 250, 250);
 }
 button{
+  width: 200px;
+}
+.img1 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.img1:hover {
+  transform: translateY(-10px); 
+}
+
+.flex {
+  display: flex;
+}
+.items-centre {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-right {
+  justify-content: right;
+}
+.btn {
+  padding: 0.6rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btn-primary {
+  background-color: rgb(29, 221, 189);
+  color: rgb(0, 59, 50);
+  margin-top: -15rem;
+}
+.btn-primary:hover {
+  background: transparent;
+  border-color: rgb(29, 221, 189);
+  color: rgb(29, 221, 189);
+}
+.flex-1 {
+  flex: 1;
+}
+.btn-secondary {
+  background: transparent;
+  color: rgb(29, 221, 189);
+  border-color: rgb(29, 221, 189);
+}
+.btn-secondary:hover {
+  background: rgb(29, 221, 189);
+  color: rgb(0, 59, 50);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+}
+
+header {
+  background-color: rgb(12, 12, 12);
+  clip-path: rectangle(0 0, 100% 0, 100% 100%, 73% 94%, 0 100%);
+}
+
+header nav {
+  padding: 2rem 0;
+}
+
+header nav .left a {
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+header nav .left a:hover {
+  color: rgb(29, 221, 189);
+}
+
+/* Container styles */
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Home section styles */
+.home {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.home .right {
+  color: rgb(250, 250, 250);
+  margin-top: -7rem;
+}
+
+.home .right h6 {
+  font-size: 1.6rem;
+  color: rgb(29, 221, 189);
+  margin-bottom: 0.5rem;
+}
+.home .right h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.home .right h1 span {
+  color: rgb(29, 221, 189);
+}
+.home .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+.home .right p span {
+  color: rgb(29, 221, 189);
+}
+
+section {
+  padding: 6rem;
+}
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+section.about h1 span {
+  color: rgb(29, 221, 189);
+}
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+section.about p {
+  font-family: "Lato", sans-serif;
+  color: rgb(0, 59, 50);
+  line-height: 1.9rem;
+  margin-bottom: 2rem;
+}
+section.about .socials {
+  display: flex;
+}
+
+section.about .socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+}
+section.about .socials a:hover {
+  background: rgb(29, 221, 189);
+}
+
+section.services {
+  background: rgb(17, 17, 17);
+}
+.services-head {
+  color: rgb(10, 9, 9);
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5rem;
+  color: rgb(29, 221, 189);
+}
+.services-head + p {
+  color: rgb(250, 250, 250);
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  font-weight: 400;
+}
+
+section.services .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+section.services .card-grid .card {
+  background: rgb(250, 250, 250);
+  padding: 3rem 2rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+section.services .card-grid .card h2 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+section.services .card-grid .card p {
+  font-family: "Lato", sans-serif;
+  color: rgb(190, 181, 181);
+  line-height: 1.6;
+}
+section.services .card-grid .card:hover {
+  background: rgb(29, 221, 189);
+}
+section.services .card-grid .card:hover h2 {
+  color: rgb(250, 250, 250);
+}
+section.services .card-grid .card:hover p {
+  color: rgb(250, 250, 250);
+}
+button{
   width: 150px;
 }
 .img1 {
@@ -177,7 +399,7 @@ button{
 }
 
 .sk:hover {
-  transform: translateY(-10px); /* Adjust the value as needed for the desired effect */
+  transform: translateY(-10px); 
 }
 
 
@@ -227,6 +449,47 @@ button{
 .btn-secondary:hover {
   background: rgb(29, 221, 189);
   color: rgb(0, 59, 50);
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid;
+}
+tr:hover {background-color: rgb(29, 221, 189);}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  header nav {
+    padding: 1rem 0;
+  }
+  
+  header nav .left a {
+    margin-right: 1rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .home .right {
+    margin-top: 0;
+  }
 }
 
 
